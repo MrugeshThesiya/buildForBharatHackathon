@@ -1,9 +1,16 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import codeKalakaarLogo from "/images/favicon-32x32.png";
 
 export default function Nav() {
   const navigate = useNavigate();
+  const navItems = [
+    { name: "Home", slug: "/" },
+    { name: "About", slug: "/About" },
+    { name: "Ecommerce", slug: "/Ecommerce" },
+    { name: "SellerSite", slug: "/SellerSite" }
+];
   return (
     <nav className="d-flex">
       <img id="logo-div" alt="Code_kalakaar_logo" src={codeKalakaarLogo}></img>
@@ -12,18 +19,11 @@ export default function Nav() {
       </div>
       <div className="linkItems">
         <ul className="link-items">
-        <li className="pointer">
-            <a href="/">Home</a>
-          </li>
-          <li className="pointer">
-            <a href="/Ecommerce">Ecommerce</a>
-          </li>
-          <li className="pointer">
-            <a href="/SellerSite">SellerSite</a>
-          </li>
-          <li className="pointer">
-            <a href="/About">About Us</a>
-          </li>
+          {navItems.map((item) => (
+            <li key={item.name} className="pointer">
+              <a href={item.slug}>{item.name}</a>
+            </li>
+          ))}
         </ul>
       </div>
       <span className="search-container">
@@ -37,14 +37,13 @@ export default function Nav() {
       </span>
       <div className="button-items d-flex">
         <span className="sign-div d-flex">
-          <button
-            type="button"
-            className="btn sign-btn btn-outline-secondary"
-          >
+          <button type="button" className="btn sign-btn btn-outline-secondary">
             Sign In
           </button>
           <button
-            onClick={()=>{navigate("/signup")}}
+            onClick={() => {
+              navigate("/signup");
+            }}
             type="button"
             className="btn mx-4 fw-bold start-btn bg-primary text-light btn-outline-primary"
           >
