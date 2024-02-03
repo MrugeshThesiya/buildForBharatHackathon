@@ -1,7 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import codeKalakaarLogo from "./images/codeKalakaar_Logo.png";
-// import { log } from "util";
+import codeKalakaarLogo from "/images/favicon-32x32.png";
 
 export default function Nav() {
   const navigate = useNavigate();
@@ -17,22 +16,13 @@ export default function Nav() {
             <a href="/">Home</a>
           </li>
           <li className="pointer">
-            <a href="/products">Products</a>
+            <a href="/Ecommerce">Ecommerce</a>
           </li>
           <li className="pointer">
-            <a href="/ecommerce">Ecommerce</a>
+            <a href="/SellerSite">SellerSite</a>
           </li>
           <li className="pointer">
-            <a href="/pricing">Pricing</a>
-          </li>
-          <li className="pointer">
-            <a href="/blog">Blog</a>
-          </li>
-          <li className="pointer">
-            <a href="/contact">Contact</a>
-          </li>
-          <li className="pointer">
-            <a href="/about">About Us</a>
+            <a href="/About">About Us</a>
           </li>
         </ul>
       </div>

@@ -1,6 +1,5 @@
 import "./index.css";
-import Nav from "./Nav";
-import Container from "./Container";
+import {Nav,Container} from "./Components/index";
 function App() {
   return (
       <div className="App">
