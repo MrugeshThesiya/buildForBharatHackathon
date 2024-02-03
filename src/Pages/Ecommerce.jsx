@@ -1,10 +1,12 @@
 import React from 'react'
+import { Nav } from '../Components/index'
+
 
 function Ecommerce() {
   return (
-    <div>
-      Ecommerce
-    </div>
+    <>
+      <Nav/>
+    </>
   )
 }
 
