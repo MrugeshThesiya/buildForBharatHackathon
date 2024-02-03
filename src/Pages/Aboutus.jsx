@@ -1,10 +1,12 @@
 import React from 'react'
-import { Nav } from '../Components/index'
+import { Container, Nav } from '../Components/index'
 
 function Aboutus() {
   return (
     <>
       <Nav/>
+      <hr />
+      <h1 style={{textAlign:"center"}}> About us</h1>
     </>
   )
 }

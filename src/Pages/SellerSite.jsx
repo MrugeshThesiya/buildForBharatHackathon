@@ -5,6 +5,8 @@ function SellerSite() {
   return (
     <>
       <Nav/>
+      <hr />
+      <h1 style={{textAlign:"center"}}>Seller Site</h1>
     </>
   )
 }

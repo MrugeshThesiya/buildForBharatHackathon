@@ -8,7 +8,6 @@ body {
     margin: 0;
     box-sizing: border-box;
     padding: 0;
-    overflow-x: hidden;
 }
 
 :root {
@@ -34,12 +33,28 @@ body {
 }
 
 nav {
-    padding: 14px;
-    position: relative;
-    left: 13px;
-    top: 4px;
+    padding-top: 14px;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    justify-content: space-between;
 }
 
+.searchItems{
+    display: flex;
+    flex-direction: row;
+}
+
+img#search-desktop{
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .link-items {
     list-style: none;
 }
@@ -48,16 +63,19 @@ nav ul li {
     display: inline;
 }
 
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+}
 
 ul li.pointer:hover {
     cursor: pointer;
 }
 
 li {
-    margin-left: 50px;
-    position: relative;
-    top: 11px;
-    left: 150px;
+    padding: 5px;
     color: var(--grey);
 }
 
@@ -65,17 +83,7 @@ li {
     width: 26px;
 }
 
-.search-container {
-    position: relative;
-    left: 520px;
-    top: 6.5px;
-}
 
-.sign-div {
-    position: relative;
-    left: 550px;
-    top: 0px;
-}
 
 .sign-btn {
     font-weight: bold;
@@ -111,8 +119,9 @@ ul li a {
     color: black;
 }
 
-img#search-mobile {
-    display: none;
+li{
+    margin-left: 40px;
+    font-size: large;
 }
 
 .what-text {
@@ -166,6 +175,7 @@ button.disc-btn {
     cursor: pointer;
     transition: all 450ms ease-in-out;
 }
+
 
 .sparkle {
     fill: #AAAAAA;
@@ -331,11 +341,6 @@ button.disc-btn {
         display: none;
     }
 
-    .search-container {
-        position: relative;
-        left: 0;
-        top: 6.5px;
-    }
 
     .sign-div {
         position: relative;
@@ -345,9 +350,6 @@ button.disc-btn {
 
     img#search-desktop {
         display: block;
-        position: relative;
-        left: 20px;
-        top: 4px;
     }
 
     ul li {

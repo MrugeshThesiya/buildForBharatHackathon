@@ -6,6 +6,8 @@ function Ecommerce() {
   return (
     <>
       <Nav/>
+      <hr />
+      <h1 style={{textAlign:"center"}}>Ecommerce</h1>
     </>
   )
 }
