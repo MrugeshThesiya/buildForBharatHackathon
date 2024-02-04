@@ -28,12 +28,13 @@ export default function Main() {
               <h3 className="content">Mrugesh Thesiya</h3>
             </div>
             <div className="card-2">
-              <h1>Backend Engineer</h1>
+              <h1>Full Stack Web Developer</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque
-                eum, commodi iusto sunt repellendus a quaerat repudiandae optio
-                tenetur inventore reiciendis sed voluptatum! Quis officiis minus
-                minima in repellendus? Nobis?
+              Meet our dynamic Full Stack Developer and Team Lead, a tech virtuoso with a passion for innovation and a flair for leading 
+              teams to success. With a robust background in both front-end and back-end technologies, this developer seamlessly bridges 
+              the gap between design and functionality, crafting seamless and responsive applications. As the lead of our hackathon team, 
+              they bring not only technical prowess but also exceptional leadership skills, guiding the team to push boundaries and deliver 
+              cutting-edge solutions. 
               </p>
             </div>
           </div>
@@ -45,12 +46,12 @@ export default function Main() {
               <h3 className="content">Viral Vaghela</h3>
             </div>
             <div className="card-2">
-              <h1>Backend Engineer</h1>
+              <h1>Front-end Web Developer</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum,
-                asperiores! Ut libero rem commodi nam quos, tempora sunt
-                repudiandae autem, recusandae ipsam, debitis animi fugiat
-                mollitia! Debitis, voluptate blanditiis. Ea?
+                Meet our Front-End Developer, a coding maestro who brings websites to life with sleek designs and seamless interactions. 
+                While he specializes in crafting visually appealing user interfaces using HTML, CSS, and JavaScript, he also dabbles in
+               the backend, adding a sprinkle of backend magic to enhance overall project performance. With a simple yet effective approach,
+                Viral also ensures that every website not only looks good but runs smoothly under the hood.
               </p>
             </div>
           </div>
@@ -62,13 +63,13 @@ export default function Main() {
               <h3 className="content">Harshi Jain</h3>
             </div>
             <div className="card-2">
-              <h1>Backend Engineer</h1>
+              <h1>Front-end Web Developer</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. In
-                cumque consequuntur ex doloremque, id ut incidunt! Consequatur,
-                itaque rem necessitatibus reprehenderit temporibus nulla
-                quisquam dolorum. Fugiat voluptatibus tempora exercitationem
-                obcaecati.
+                Unleashing the magic of pixels, our Front-End Web Developer is a maestro of design and interactivity. 
+                Armed with a palette of HTML and CSS, she breathes life into our digital canvas, creating
+                 visually captivating websites that resonate with seamless user experiences. From responsive layouts to 
+                eye-catching animations, she also turns ideas into immersive web realities, ensuring every click 
+                 is a journey and every scroll a delight.
               </p>
             </div>
           </div>
@@ -77,16 +78,15 @@ export default function Main() {
               <div className="img4">
                 <img src="" />
               </div>
-              <h3 className="content">Harshi Jain</h3>
+              <h3 className="content">Twinkal Ajmera</h3>
             </div>
             <div className="card-2">
-              <h1>Backend Engineer</h1>
+              <h1>Front-end Web Developer</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatem quae tempora provident ex quibusdam in minima
-                perferendis , esse recusandae quaerat tempore, quos numquam
-                adipisci tenetur consequuntur cupiditate ratione repellendus
-                optio?
+              Crafting a symphony of visuals and functionality, she is the virtuoso behind the scenes.
+               With a mastery of HTML and CSS, she sculpts user interfaces that not only captivate but also elevate
+                the overall user experience. From the first impression to the last click, our developer weaves code into an art 
+                form, making every visit to our website a harmonious blend of design and delight.
               </p>
             </div>
           </div>
