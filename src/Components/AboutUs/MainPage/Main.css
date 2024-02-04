@@ -45,10 +45,15 @@
     width: 100%;
     background-color: #fafafa;
     display:flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 20px;
     border-radius: 15px;
+}
+
+.content{
+    white-space: nowrap;
 }
 
 .card-1{
@@ -187,6 +192,11 @@
 }
 
 
+.card-1,.card-2,.card-3,.card-4{
+    float: right;
+}
+.img1 ,.img2, .img3, .img4{
+}
 @media screen and (max-width:900px){
     .team-section .container .team-card{
     grid-template-columns: repeat(2, 1fr);

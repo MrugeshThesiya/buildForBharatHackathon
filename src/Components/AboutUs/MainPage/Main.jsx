@@ -23,7 +23,7 @@ export default function Main() {
           <div className="card">
             <div className="card-1">
               <div className="img1">
-                <img src="" />
+                <img src="https://media.licdn.com/dms/image/D4D03AQGm_x2aMcqUuw/profile-displayphoto-shrink_400_400/0/1704723680772?e=1712793600&v=beta&t=lJE-5mzy1oi5bSLODMOasj_Qi0gHEwZoNsM6EMm73JY" />
               </div>
               <h3 className="content">Mrugesh Thesiya</h3>
             </div>
