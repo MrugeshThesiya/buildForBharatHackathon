@@ -4,13 +4,13 @@ import Wave from "./Wave";
 export default function Container() {
   return (
     <div>
-      <hr />
+
       <div data-aos="fade-down" className="text-center mt-5">
         <p className="tagline-text">
           Develop Swiftly. <br /> <span className="mt-3">Deploy Globally.</span>
         </p>
         <div data-aos="" className="text-dark tagline">
-          Your Online Business <a href="/contact">Journey With Ease</a>
+          Your Online Business <a href="/About">Journey With Ease</a>
         </div>
       </div>
       <div className="dicover text-center">

@@ -8,10 +8,11 @@ export default function Nav() {
   const navItems = [
     { name: "Home", slug: "/" },
     { name: "Ecommerce", slug: "/Ecommerce" },
-    { name: "SellerSite", slug: "/SellerSite" },
-    { name: "About", slug: "/About" },
+    { name: "Seller Site", slug: "/SellerSite" },
+    { name: "About Us", slug: "/About" },
   ];
   return (
+    <>
     <nav>
       <div className="logo">
         <img
@@ -61,5 +62,7 @@ export default function Nav() {
         </div>
       </div>
     </nav>
+    <hr />
+    </>
   );
 }

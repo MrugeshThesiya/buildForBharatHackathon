@@ -1,10 +1,15 @@
 import "./index.css";
-import {Nav,Container} from "./Components/index";
+// eslint-disable-next-line no-unused-vars
+import { Outlet } from "react-router-dom";
+import {Nav,Container,FooterComponent} from "./Components/index";
 function App() {
   return (
       <div className="App">
         <Nav />
-        <Container />
+        <main>
+          <Outlet />
+        </main>
+        <FooterComponent />
       </div>
   );
 }
