@@ -20,7 +20,7 @@ export default function Nav() {
           alt="Code_kalakaar_logo"
           src={codeKalakaarLogo}
         ></img>
-        <h3 className="logo-text pointer">DigiCat</h3>
+        <h3 onClick={navigate("/")} className="logo-text pointer">DigiCat</h3>
       </div>
       <div className="linkItems">
         <ul className="link-items">

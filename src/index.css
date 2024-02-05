@@ -303,82 +303,12 @@ button.disc-btn {
 
 /* MOBILE RESPONSIVE CSS CODE GOES HERE */
 
-@media screen and (max-width:768px) {
-
-    html,
-    body {
-        overflow-x: hidden;
+@media only screen and (max-width:768px){
+    #logo-div{
+        margin-left: 12px;
     }
-
-    nav {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding: auto;
-        position: relative;
-        left: auto;
-        top: auto;
-    }
-
-    h3.logo-text {
-        font-size: 18px;
-        margin-top: 5px;
-        white-space: nowrap;
-    }
-
-    nav ul li {
-        text-align: center;
+    .link-items{
         display: flex;
         flex-direction: column;
-        position: relative;
-        top: 65px;
-    }
-
-    ul.link-items {
-        font-size: 20px;
-        display: none;
-    }
-
-    .sign-div {
-        display: none;
-    }
-
-
-    .sign-div {
-        position: relative;
-        left: 0;
-        top: 0px;
-    }
-
-    img#search-desktop {
-        display: block;
-    }
-
-    ul li {
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        justify-content: center;
-        text-align: center;
-        position: relative;
-        left: -80px;
-    }
-
-    div.button-items {
-        margin-top: 20px;
-        position: relative;
-        top: 250px;
-        left: -280px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    button.btn {
-        width: auto;
-        white-space: nowrap;
-    }
-
-    hr {
-        display: none;
     }
 }
