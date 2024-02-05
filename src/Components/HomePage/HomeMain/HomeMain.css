@@ -1,0 +1,43 @@
+.outer-div1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #0C204A;
+    align-items: center;
+    color: white;
+    margin-top: 232px;
+}
+.inner-div1{
+    justify-content: space-between;
+    text-align: center;
+    margin: 40px;
+    width: 88%;
+    font-weight: 700;
+}
+.heading{
+    font-size: 56px;
+}
+.content{
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+.inner-div2{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px;
+}
+.main1,.main2,.main3{
+    font-size: 20px;
+    width: 420px;
+    margin-left: 50px;
+    text-align: center;
+}
+.logo2{
+    height: 43px;
+}
+.gt-start-link{
+    background: white;
+    width: 200px;
+    padding: 10px 18px;
+    border-radius: 12px;
+}

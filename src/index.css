@@ -41,6 +41,7 @@ nav {
     justify-content: space-between;
 }
 
+
 .searchItems{
     display: flex;
     flex-direction: row;
@@ -179,13 +180,13 @@ button.disc-btn {
 
 
 .sparkle {
-    fill: #AAAAAA;
+    fill: #ffffff;
     transition: all 800ms ease;
 }
 
 .text {
     font-weight: 600;
-    color: #AAAAAA;
+    color: #ffffff;
     font-size: medium;
 }
 
