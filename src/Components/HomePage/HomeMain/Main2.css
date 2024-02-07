@@ -1,0 +1,42 @@
+.container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 94px;
+    position: relative;
+    left: -50px;
+}
+
+.container .content .row{
+    width: 80%;
+    /* margin: auto; */
+}
+
+.content{
+    margin-right: 10px;
+}
+
+.title h4{
+    font-size: 36px;
+    color: #0b214a;
+    font-weight: 800 !important;
+}
+h5{
+    font-size: 20px;
+    color: #0b214a;
+}
+p{
+    font-size: 16px;
+    font-family: 'Roboto' sans-serif;
+}
+.image-container{
+    width: 100;
+    margin-left: 10px;
+}
+.img{
+    margin-left: 300px;
+    border-radius: 10px;
+    height: 350px;
+    width: 500px;
+    background: url("https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=3538&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat center center/cover;
+}
