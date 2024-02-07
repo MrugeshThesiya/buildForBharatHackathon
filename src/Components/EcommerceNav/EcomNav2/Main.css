@@ -1,0 +1,13 @@
+
+.outer-div{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 13px;
+}
+.element img{
+    width: 40px;
+}
+.element{
+    gap: 20px;
+}

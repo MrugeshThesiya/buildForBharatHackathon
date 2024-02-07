@@ -7,7 +7,7 @@
   .footer {
       background-color: #0C204A;
       color: #fff;
-      margin-top: 200px;
+      margin-top: 50px;
   }
 
   .footer-wave-svg {
@@ -104,7 +104,7 @@
   }
 
   .footer-call-to-action-button:hover {
-    background-color: #1C63ED;
+    background-color: #0C204A;
     color: white;
   }
 

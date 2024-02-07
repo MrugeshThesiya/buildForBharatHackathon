@@ -4,9 +4,9 @@ import "../HomeMain/HomeMain.css";
 export default function Main() {
   return (
     <>
-      <div className="outer-div1">
+      <div data-aos="fade-down" className="outer-div1">
         <div className="inner-div1">
-          <div className="heading">
+          <div  className="heading">
             Empowering E-Commerce Success, Digitize Your Product Catalog with
             Digicat
           </div>
@@ -16,7 +16,7 @@ export default function Main() {
           </div>
           <br />
           <br />{" "}
-          <a className="gt-start-link" href="#">
+          <a id="gtStart" className="gt-start-link" href="#">
             Get started
           </a>
         </div>

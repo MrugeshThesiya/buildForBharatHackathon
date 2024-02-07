@@ -1,0 +1,48 @@
+.sign-ecom{
+    background: transparent;
+    padding: 8px 10px;
+    border: solid black 1px;
+    border-radius: 5.5px;
+    font-size: 14px;
+    margin-left: 13.5px;
+    color: #0C204A;
+}
+.sign-ecom:hover{
+    cursor: pointer;
+    background-color: #0C204A;
+    color: white;
+}
+.ecom-logo{
+    margin-left: 12px;
+    font-size: 18px;
+}
+.Ecom-Nav{
+    height: 50px;
+    margin-top: 2px;
+    background-color: white;
+    color: black;
+    /* border: 1px solid; */
+    padding: 6.75px;
+
+    border-radius: 20px;
+}
+.Ecom-search-input{
+    width: 600px;
+    font-size: large;
+    border-radius: 20px;
+    border: 0.5px solid;
+    padding: 5px;
+}
+.search-box-ecommerce{
+    position: absolute;
+    transform: translate(-50%);
+    right: 11.1%;
+    display: flex;
+}
+#search-ecom{
+    margin-left: 20px;
+    margin-top: 6px;
+}
+#search-ecom:hover{
+    cursor: pointer;
+}

@@ -82,7 +82,8 @@ li {
 }
 
 .search-icon {
-    width: 26px;
+    width: 22.4px;
+    height: 22.4px;
 }
 
 
@@ -102,7 +103,7 @@ li {
     font-size: 100px;
     line-height: 110px;
     margin-top: 132px;
-    color: var(--darkblue);
+    color: black;
 }
 
 .tagline {
@@ -161,6 +162,16 @@ button.disc-btn {
     margin-top: 100px;
     width: 300px;
 }
+
+.user-icon{
+    width: 36.5px;
+    margin-right: 20px;
+    margin-top: 2px;
+    border: 0.5px solid #0C204A;
+    border-radius: 100%;
+}
+
+
 
 /* discover button css */
 
@@ -301,14 +312,44 @@ button.disc-btn {
  }
 
 
+ 
 /* MOBILE RESPONSIVE CSS CODE GOES HERE */
 
 @media only screen and (max-width:768px){
-    #logo-div{
-        margin-left: 12px;
+    p.tagline-text{
+        font-size: 32px;
     }
-    .link-items{
-        display: flex;
-        flex-direction: column;
+    .tagline2{
+        position: relative;
+        top: -50px;
     }
-}
+    div.tagline{
+        font-size: 17px;
+        margin-top: -60px;
+        font-weight: 500;
+        line-height: 31px;
+    }
+    button.disc-btn {
+        transform: translate(-50%, -50%);
+        margin-top: 65px;
+        width: 250px;
+        height: 55px;
+    }
+    .caption {
+        font-size: 16px;
+        white-space: nowrap;
+        line-height: auto;
+        font-weight: auto;
+    }
+    .caption-ans {
+        font-size: 16px;
+        line-height: auto;
+        font-weight: auto;
+        margin: auto;
+        margin-top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 360px;
+    }
+    
+}   

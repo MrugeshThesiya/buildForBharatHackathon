@@ -1,5 +1,6 @@
 import React from "react";
 import Wave from "./Wave";
+import { HomeComponent1, HomeComponent2 } from "./index";
 import { Navigate, useNavigate } from "react-router-dom";
 export default function Container() {
   const navigate = useNavigate();
@@ -9,10 +10,10 @@ export default function Container() {
   return (
     <>
       <div>
-        <div data-aos="fade-down" className="text-center mt-5">
+        <div data-aos="fade-down" className="text-center mt-0">
           <p className="tagline-text">
-            Develop Swiftly. <br />{" "}
-            <span className="mt-3">Deploy Globally.</span>
+            Develop Swiftly. <br />
+            <span className="tagline2">Deploy Globally.</span>
           </p>
           <div data-aos="" className="text-dark tagline">
             Your Online Business{" "}
@@ -21,7 +22,7 @@ export default function Container() {
             </a>
           </div>
         </div>
-        <div className="dicover text-center">
+        <div data-aos="zoom-in" className="dicover text-center">
           <button onClick={() => navigateToAbout()} className="disc-btn">
             <svg
               height="24"
@@ -53,6 +54,8 @@ export default function Container() {
           </div>
         </div>
       </div>
+    <HomeComponent1 />
+    <HomeComponent2 />
     </>
   );
 }
