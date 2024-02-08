@@ -1,26 +1,13 @@
-.team-section{
-    width: 100%;
-}
-.team-section .container{
-    width: 80%;
-    margin: auto;
-}
-.team-section .container .row{
-    width: 60%;
-    margin: auto;
-}
-.team-section .container .row .title{
+.title{
     text-align: center;
     margin-top: 50px;
 }
-.team-section .container .row .title h1{
-    font-size: 44px;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    color: #00084d;
-    border-bottom: 5px solid #F6F6F6;
+.title-des{
+    margin: 3rem;
+    text-align: center;
 }
-.team-section .container .row .title2{
+
+.title2{
     font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 1.5px;
@@ -28,18 +15,19 @@
     text-align: center;
     margin-top: 25px;
 }
-.team-section .container .row .title p{
+.title p{
     font-size: 1.5em;
     line-height: 1.2em;
     margin: 30px 0px;
     color: #0b214a;
     font-weight: 200 !important;
 }
-.team-section .container .team-card{
-    width: 100%;
-    display: grid;
-    grid-gap: 40px;
-    margin-top: 50px;
+.team-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
 }
 .card{
     width: 100%;
@@ -52,9 +40,9 @@
     border-radius: 15px;
 }
 
-.content{
+/* .content{
     white-space: nowrap;
-}
+} */
 
 .card-1{
     float: left;
@@ -93,28 +81,28 @@
     width: 10rem;
    height: 10rem;
    border-radius: 50%;
-    /* background: url("https://images.unsplash.com/photo-1507438222021-237ff73669b5?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat center center/cover; */
+    background: url("https://media.licdn.com/dms/image/D4D03AQGm_x2aMcqUuw/profile-displayphoto-shrink_400_400/0/1704723680772?e=1712793600&v=beta&t=lJE-5mzy1oi5bSLODMOasj_Qi0gHEwZoNsM6EMm73JY") no-repeat center center/cover;
 }
 .img2{
     border:5px solid #163172;
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
-     /* background: url("https://images.unsplash.com/photo-1507081323647-4d250478b919?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat center center/cover; */
+     background: url("https://media.licdn.com/dms/image/D4D03AQHL4xNp46NuDw/profile-displayphoto-shrink_100_100/0/1704776948991?e=1712793600&v=beta&t=GpOcH3le6Gs_CBkBdem18iS5Q2s2lH7cdq0cVlt0-3A") no-repeat center center/cover;
 }
 .img3{
     border:5px solid #163172;
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
-     /* background: url("https://images.unsplash.com/photo-1495716868937-273203d5bb0c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat center center/cover; */
+     background: url("https://images.unsplash.com/photo-1495716868937-273203d5bb0c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat center center/cover;
 }
 .img4{
     border:5px solid #163172;
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
-     /* background: url("https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat center center/cover; */
+     background: url("https://media.licdn.com/dms/image/D4D03AQHMLTpQyJ_CXA/profile-displayphoto-shrink_400_400/0/1707419037295?e=1712793600&v=beta&t=2owge4LBkoZD3xRnPYsYyGNEY6lt0sjWBJ6Uo0bwE4A") no-repeat center center/cover;
 }
 
 .team-section .container .team-card .card:hover{
@@ -192,11 +180,9 @@
 }
 
 
-.card-1,.card-2,.card-3,.card-4{
+/* .card-1,.card-2,.card-3,.card-4{
     float: right;
-}
-.img1 ,.img2, .img3, .img4{
-}
+} */
 @media screen and (max-width:900px){
     .team-section .container .team-card{
     grid-template-columns: repeat(2, 1fr);
