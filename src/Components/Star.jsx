@@ -6,7 +6,6 @@ const Star = ({stars,reviews}) => {
   const ratingStar =  Array.from({length: 5},(elem,index)=>{
         2.4;
         let number = index + 0.5;
-        debugger;
     return(
         <span key={index}>
         {
@@ -22,7 +21,7 @@ const Star = ({stars,reviews}) => {
   return (
         <div>
             <div className="icon-style d-flex">
-                {ratingStar} <p className='mx-2'>{reviews}</p>
+                {ratingStar} <p className='mx-2 review-count'>{reviews}</p>
             </div>
         </div>
   )

@@ -1,6 +1,8 @@
+
 .productCards{
     display: flex;
     flex-wrap: wrap;
+    font-family: 'Inter', sans-serif !important;
     justify-content: center;
 }
 
@@ -11,10 +13,11 @@
     justify-content: flex-start;
     height: inherit;
     width: 20rem;
-    border-radius: 1rem;
+    /* border-radius: 1rem; */
     margin: 1rem;
     padding: 1rem;
-    border: 1px solid black;
+    border: 0.005px solid black;
+    border-radius: 10px;
 }
 
 
@@ -38,12 +41,14 @@
     max-height: 210px;
 }
 .btn-store{
-    color: #0C204A;
-    border-radius: 20px;
-    background: white;
+    background: black;
+    color: white;
+    width: 250px;
 }
 
 .btn-store:hover{
-    border-radius: 20px;
-    background: #0C204A;
+}
+
+.price-tag{
+    font-size: 19px;
 }
