@@ -27,7 +27,7 @@ export {
   EcomProducts,
   Star,
   Navbar,
-  Signup
+  Signup,
   ProductOverview
 
 };

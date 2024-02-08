@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Main.css"
-import logo from "../../../../public/images/DigiCatLogo.jpg"
+import logo from "/images/DigiCatLogo.jpg"
 export default function Main() {
   return (
     <>

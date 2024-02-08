@@ -7,6 +7,7 @@ function Ecommerce() {
   return (
     <>
     <EcommerceNav />
+    <hr />
     <EcommerceNav2 />
     <EcomCarousel />
     <EcomProducts />
