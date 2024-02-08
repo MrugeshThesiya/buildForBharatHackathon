@@ -41,6 +41,7 @@ nav {
     justify-content: space-between;
 }
 
+
 .searchItems{
     display: flex;
     flex-direction: row;
@@ -81,7 +82,8 @@ li {
 }
 
 .search-icon {
-    width: 26px;
+    width: 22.4px;
+    height: 22.4px;
 }
 
 
@@ -101,7 +103,7 @@ li {
     font-size: 100px;
     line-height: 110px;
     margin-top: 132px;
-    color: var(--darkblue);
+    color: black;
 }
 
 .tagline {
@@ -161,6 +163,16 @@ button.disc-btn {
     width: 300px;
 }
 
+.user-icon{
+    width: 36.5px;
+    margin-right: 20px;
+    margin-top: 2px;
+    border: 0.5px solid #0C204A;
+    border-radius: 100%;
+}
+
+
+
 /* discover button css */
 
 .disc-btn {
@@ -179,13 +191,13 @@ button.disc-btn {
 
 
 .sparkle {
-    fill: #AAAAAA;
+    fill: #ffffff;
     transition: all 800ms ease;
 }
 
 .text {
     font-weight: 600;
-    color: #AAAAAA;
+    color: #ffffff;
     font-size: medium;
 }
 
@@ -300,84 +312,44 @@ button.disc-btn {
  }
 
 
+ 
 /* MOBILE RESPONSIVE CSS CODE GOES HERE */
 
-@media screen and (max-width:768px) {
-
-    html,
-    body {
-        overflow-x: hidden;
+@media only screen and (max-width:768px){
+    p.tagline-text{
+        font-size: 32px;
     }
-
-    nav {
-        display: block;
+    .tagline2{
+        position: relative;
+        top: -50px;
+    }
+    div.tagline{
+        font-size: 17px;
+        margin-top: -60px;
+        font-weight: 500;
+        line-height: 31px;
+    }
+    button.disc-btn {
+        transform: translate(-50%, -50%);
+        margin-top: 65px;
+        width: 250px;
+        height: 55px;
+    }
+    .caption {
+        font-size: 16px;
+        white-space: nowrap;
+        line-height: auto;
+        font-weight: auto;
+    }
+    .caption-ans {
+        font-size: 16px;
+        line-height: auto;
+        font-weight: auto;
+        margin: auto;
+        margin-top: 100px;
         margin-left: auto;
         margin-right: auto;
-        padding: auto;
-        position: relative;
-        left: auto;
-        top: auto;
+        width: 360px;
     }
-
-    h3.logo-text {
-        font-size: 18px;
-        margin-top: 5px;
-        white-space: nowrap;
-    }
-
-    nav ul li {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        top: 65px;
-    }
-
-    ul.link-items {
-        font-size: 20px;
-        display: none;
-    }
-
-    .sign-div {
-        display: none;
-    }
-
-
-    .sign-div {
-        position: relative;
-        left: 0;
-        top: 0px;
-    }
-
-    img#search-desktop {
-        display: block;
-    }
-
-    ul li {
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        justify-content: center;
-        text-align: center;
-        position: relative;
-        left: -80px;
-    }
-
-    div.button-items {
-        margin-top: 20px;
-        position: relative;
-        top: 250px;
-        left: -280px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    button.btn {
-        width: auto;
-        white-space: nowrap;
-    }
-
-    hr {
-        display: none;
-    }
-}
+    
+}   

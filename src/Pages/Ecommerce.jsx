@@ -1,10 +1,15 @@
 import React from 'react'
-import {EcommerceComponent} from "../Components/index"
-
+import { EcommerceNav } from '../Components/index'
+import { EcommerceNav2 } from '../Components/index'
+import { EcomCarousel } from '../Components/index'
+import { EcomProducts } from '../Components/index'
 function Ecommerce() {
   return (
     <>
-    <EcommerceComponent />
+    <EcommerceNav />
+    <EcommerceNav2 />
+    <EcomCarousel />
+    <EcomProducts />
     </>
   )
 }
