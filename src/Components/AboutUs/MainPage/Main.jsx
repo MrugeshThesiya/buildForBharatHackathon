@@ -2,91 +2,86 @@ import React from "react";
 import "../MainPage/Main.css";
 export default function Main() {
   return (
-    <div className="team-section">
-      <div className="container">
-        <div className="row">
-          <div className="title">
-            <h1> ABOUT US</h1>
-            <p className="fs-5">
+    <>
+            <h1 className="title"> ABOUT US</h1>
+            <p className="title-des">
               Digicat offers a comprehensive suite of services designed to
               simplify the digitization of product catalogs. Our team of experts
               works closely with each client to understand their unique needs
               and goals, providing tailored solutions that deliver results.
             </p>
-          </div>
-          <div className="title2">
-            <h1>OUR TEAM</h1>
-          </div>
-        </div>
+            <h1 className="title2">OUR TEAM</h1>
 
         <div className="team-card">
           <div className="card">
             <div className="card-1">
               <div className="img1">
-                <img src="https://media.licdn.com/dms/image/D4D03AQGm_x2aMcqUuw/profile-displayphoto-shrink_400_400/0/1704723680772?e=1712793600&v=beta&t=lJE-5mzy1oi5bSLODMOasj_Qi0gHEwZoNsM6EMm73JY" />
               </div>
               <h3 className="content">Mrugesh Thesiya</h3>
             </div>
             <div className="card-2">
-              <h1>Backend Engineer</h1>
+              <h1>Full Stack Web Developer</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque
-                eum, commodi iusto sunt repellendus a quaerat repudiandae optio
-                tenetur inventore reiciendis sed voluptatum! Quis officiis minus
-                minima in repellendus? Nobis?
+                Meet our dynamic Full Stack Developer and Team Lead, a tech virtuoso
+                 with a passion for innovation and a flair for leading teams to success.
+                  With a robust background in both front-end and back-end technologies, 
+                  this developer seamlessly bridges the gap between design and functionality,
+                   crafting seamless and responsive applications. As the lead of our hackathon team,
+                    they bring not only technical prowess but also exceptional leadership skills,
+                     guiding the team to push boundaries and deliver cutting-edge solutions.
               </p>
             </div>
           </div>
           <div className="card">
             <div className="card-1">
               <div className="img2">
-                <img src="" />
+                
               </div>
               <h3 className="content">Viral Vaghela</h3>
             </div>
             <div className="card-2">
-              <h1>Backend Engineer</h1>
+              <h1>Front-end Web Developer</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum,
-                asperiores! Ut libero rem commodi nam quos, tempora sunt
-                repudiandae autem, recusandae ipsam, debitis animi fugiat
-                mollitia! Debitis, voluptate blanditiis. Ea?
+              Meet our Front-End Developer, a coding maestro who brings websites to life with 
+              sleek designs and seamless interactions. While he specializes in crafting visually 
+              appealing user interfaces using HTML, CSS, and JavaScript, he also dabbles in the backend, 
+              adding a sprinkle of backend magic to enhance overall project performance. With a simple 
+              yet effective approach, Viral also ensures that every website not only looks good but runs
+               smoothly under the hood.
               </p>
             </div>
           </div>
           <div className="card">
             <div className="card-1">
               <div className="img3">
-                <img src="" />
+                
               </div>
               <h3 className="content">Harshi Jain</h3>
             </div>
             <div className="card-2">
-              <h1>Backend Engineer</h1>
+              <h1>Research and Content</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. In
-                cumque consequuntur ex doloremque, id ut incidunt! Consequatur,
-                itaque rem necessitatibus reprehenderit temporibus nulla
-                quisquam dolorum. Fugiat voluptatibus tempora exercitationem
-                obcaecati.
+              Meet Harshi, our front-end developer exploring the realms of research and content. 
+              Harshi combines coding skills with a curiosity for content creation, bringing simplicity
+               and functionality to our website. With a focus on user-friendly design, Harshi ensures a
+                seamless and enjoyable online experience for our visitors.
               </p>
             </div>
           </div>
           <div className="card">
             <div className="card-1">
               <div className="img4">
-                <img src="" />
+              
               </div>
-              <h3 className="content">Harshi Jain</h3>
+              <h3 className="content">Twinkal Ajmera</h3>
             </div>
             <div className="card-2">
-              <h1>Backend Engineer</h1>
+              <h1>Product Manager</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatem quae tempora provident ex quibusdam in minima
-                perferendis , esse recusandae quaerat tempore, quos numquam
-                adipisci tenetur consequuntur cupiditate ratione repellendus
-                optio?
+              Say hello to Twinkal, our front-end web developer and product manager. Twinkal 
+              handles the design and functionality of our website, making sure it looks good 
+              and works well. It's all about creating a user-friendly experience, and Twinkal
+               knows just how to balance the technical stuff with a practical touch.
               </p>
             </div>
           </div>
@@ -99,7 +94,6 @@ export default function Main() {
             </a>
           </div>
         </div>
-      </div>
-    </div>
+    </>
   );
 }
