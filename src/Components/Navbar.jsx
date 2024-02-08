@@ -1,119 +1,203 @@
-import React from 'react';
+import React from "react";
+import { Menu, X } from "lucide-react";
+import { Link, useNavigate } from "react-router-dom";
+import codeKalakaarLogo from "/images/DigiCatLogo.jpg";
+import { useAuth0 } from "@auth0/auth0-react";
 
 function Navbar() {
+  const navigate = useNavigate();
+  const menuItems = [
+    { name: "Home", href: "/" },
+    { name: "Ecommerce", href: "/Ecommerce" },
+    { name: "Seller Site", href: "/SellerSite" },
+    { name: "About Us", href: "/About" },
+  ];
+  const { user, loginWithRedirect, isAuthenticated, logout } = useAuth0();
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <>
-<nav className="navbar navbar-expand-lg navbar-light bg-body-tertiary">
-  <div className="container-fluid">
-    <button
-      data-mdb-collapse-init
-      className="navbar-toggler"
-      type="button"
-      data-mdb-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <i className="fas fa-bars"></i>
-    </button>
-
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      
-      <a className="navbar-brand mt-2 mt-lg-0" href="#">
-        <img
-          src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
-          height="15"
-          alt="MDB Logo"
-          loading="lazy"
-        />
-      </a>
-     
-      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-        <li className="nav-item">
-          <a className="nav-link" href="#">Dashboard</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">Team</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">Projects</a>
-        </li>
-      </ul>
-     
-    </div>
-    
-    <div className="d-flex align-items-center">
-     
-      <a className="text-reset me-3" href="#">
-        <i className="fas fa-shopping-cart"></i>
-      </a>
-
-    
-      <div className="dropdown">
-        <a
-          data-mdb-dropdown-init
-          className="text-reset me-3 dropdown-toggle hidden-arrow"
-          href="#"
-          id="navbarDropdownMenuLink"
-          role="button"
-          aria-expanded="false"
-        >
-          <i className="fas fa-bell"></i>
-          <span className="badge rounded-pill badge-notification bg-danger">1</span>
-        </a>
-        <ul
-          className="dropdown-menu dropdown-menu-end"
-          aria-labelledby="navbarDropdownMenuLink"
-        >
-          <li>
-            <a className="dropdown-item" href="#">Some news</a>
-          </li>
-          <li>
-            <a className="dropdown-item" href="#">Another news</a>
-          </li>
-          <li>
-            <a className="dropdown-item" href="#">Something else here</a>
-          </li>
-        </ul>
+      <div className="relative w-full bg-white">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
+          <div className="inline-flex items-center space-x-2">
+            <img
+              className="mx-3"
+              id="logo-div"
+              alt="Code_kalakaar_logo"
+              src={codeKalakaarLogo}
+            ></img>
+            <h3 className="logo-text pointer">DigiCat</h3>
+          </div>
+          <div className="hidden lg:block">
+            <ul className="inline-flex space-x-8">
+              {menuItems.map((item) => (
+                <li key={item.name}>
+                  <Link
+                    to={item.href}
+                    className="text-sm font-semibold text-gray-800 hover:text-gray-900"
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="hidden lg:block">
+          <div className="searchItems">
+          <span className="search-container">
+          <img hidden
+              id="search-desktop"
+              className="search-icon pointer"
+              src="https://img.icons8.com/?size=512&id=59878&format=png"
+              alt="Search"
+            />
+            {
+              isAuthenticated ? (
+                <img className="user-icon" src={user.picture} alt="user-logo" />
+              ) : (
+                <img hidden src={""} alt="user-logo" />
+              )
+            }
+          </span>
+          <div className="button-items d-flex">
+            <span className="sign-div d-flex">
+              {
+                isAuthenticated ? (
+                  <button
+                  type="button"
+                  className="btn sign-btn btn-outline-secondary"
+                  onClick={(e)=> logout()}>
+                    Logout
+                  </button>
+                ) : (
+                  <button
+                  onClick={(e) => loginWithRedirect()}
+                  type="button"
+                  className="btn sign-btn btn-outline-secondary"
+                >
+                  Sign In
+                </button>
+                )
+              }
+              <button
+                onClick={() => {
+                  navigate("/signup");
+                }}
+                type="button"
+                className="btn mx-4 fw-bold start-btn bg-primary text-light btn-outline-primary"
+              >
+                Get Started
+              </button>
+            </span>
+          </div>
+        </div>
+          </div>
+          <div className="lg:hidden">
+            <Menu onClick={toggleMenu} className="h-6 w-6 cursor-pointer" />
+          </div>
+          {isMenuOpen && (
+            <div className="absolute inset-x-0 top-0 z-50 origin-top-right transform p-2 transition lg:hidden">
+              <div className="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
+                <div className="px-5 pb-6 pt-5">
+                  <div className="flex items-center justify-between">
+                    <div className="inline-flex items-center space-x-2">
+                      <img
+                        className="mx-3"
+                        id="logo-div"
+                        alt="Code_kalakaar_logo"
+                        src={codeKalakaarLogo}
+                      ></img>
+                      <h3 className="logo-text pointer">DigiCat</h3>
+                    </div>
+                    <div className="-mr-2">
+                      <button
+                        type="button"
+                        onClick={toggleMenu}
+                        className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                      >
+                        <span className="sr-only">Close menu</span>
+                        <X className="h-6 w-6" aria-hidden="true" />
+                      </button>
+                    </div>
+                  </div>
+                  <div className="searchItems">
+                    <span className="search-container">
+                      <img
+                        hidden
+                        id="search-desktop"
+                        className="search-icon pointer"
+                        src="https://img.icons8.com/?size=512&id=59878&format=png"
+                        alt="Search"
+                      />
+                      {isAuthenticated ? (
+                        <img
+                          className="user-icon"
+                          src={user.picture}
+                          alt="user-logo"
+                        />
+                      ) : (
+                        <img hidden src={""} alt="user-logo" />
+                      )}
+                      {/* <img id='search-mobile' className='search-icon pointer' src="https://cdn-icons-png.flaticon.com/512/4410/4410940.png" alt="Search" /> */}
+                    </span>
+                    <div className="button-items d-flex mt-4">
+                      <span className="sign-div d-flex">
+                        {isAuthenticated ? (
+                          <button
+                            type="button"
+                            className="btn sign-btn btn-outline-secondary"
+                            onClick={(e) => logout()}
+                          >
+                            Logout
+                          </button>
+                        ) : (
+                          <button
+                            onClick={(e) => loginWithRedirect()}
+                            type="button"
+                            className="btn sign-btn btn-outline-secondary"
+                          >
+                            Sign In
+                          </button>
+                        )}
+                        <button
+                          onClick={() => {
+                            navigate("/signup");
+                          }}
+                          type="button"
+                          className="btn mx-4 fw-bold start-btn bg-primary text-light btn-outline-primary"
+                        >
+                          Get Started
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                  <div className="mt-6">
+                    <nav className="grid gap-y-4">
+                      {menuItems.map((item) => (
+                        <Link
+                          key={item.name}
+                          to={item.href}
+                          className="-m-3 flex items-center rounded-md p-3 text-sm font-semibold hover:bg-gray-50"
+                        >
+                          <span className="ml-3 text-base font-medium text-gray-900">
+                            {item.name}
+                          </span>
+                        </Link>
+                      ))}
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
       </div>
-      <div className="dropdown">
-        <a
-          data-mdb-dropdown-init
-          className="dropdown-toggle d-flex align-items-center hidden-arrow"
-          href="#"
-          id="navbarDropdownMenuAvatar"
-          role="button"
-          aria-expanded="false"
-        >
-          <img
-            src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
-            className="rounded-circle"
-            height="25"
-            alt="Black and White Portrait of a Man"
-            loading="lazy"
-          />
-        </a>
-        <ul
-          className="dropdown-menu dropdown-menu-end"
-          aria-labelledby="navbarDropdownMenuAvatar"
-        >
-          <li>
-            <a className="dropdown-item" href="#">My profile</a>
-          </li>
-          <li>
-            <a className="dropdown-item" href="#">Settings</a>
-          </li>
-          <li>
-            <a className="dropdown-item" href="#">Logout</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-  </div>
- 
-</nav>
-</>
+      <hr />
+    </>
   );
 }
 

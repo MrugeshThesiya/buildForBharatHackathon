@@ -21,13 +21,7 @@ function Main() {
       <h3 className="mt-4">Recommended For You</h3>
     </div>
       <div className="productCards">
-        {products.map((itemDetails) => {
-          return (
-            <>
-             <ProdCard itemDetails={itemDetails}/>
-            </>
-          );
-        })}
+       {products.map((item)=>(<ProdCard key={item.id} itemDetails={{...item}}></ProdCard>))}
       </div>
     </>
   );

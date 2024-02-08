@@ -2,8 +2,10 @@ import React from 'react'
 import "./Main.css";
 import {Star} from "../../index";
 function ProdCard({itemDetails}) {
+  {console.log(itemDetails)}
   return (
-    <div data-aos="fade-up" className="productCard mt-5">
+    <>
+    <div  data-aos="fade-up" className="productCard mt-5">
               <div className="">
                 <img draggable="flase" className='prodImg' src={itemDetails.image} />
               </div>
@@ -19,6 +21,7 @@ function ProdCard({itemDetails}) {
                 </div>
                 </div>
     </div>
+    </>
   )
 }
 
