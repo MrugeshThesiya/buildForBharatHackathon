@@ -6,7 +6,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { createRoot } from "react-dom/client";
 import { Auth0Provider } from "@auth0/auth0-react";
 import { Aboutus, SellerSite, Ecommerce } from "./Pages/PageIndex";
-import { Container } from "./Components/index";
+import { Container, ProductOverview } from "./Components/index";
 
 const router = createBrowserRouter([
   {
@@ -39,6 +39,10 @@ const router = createBrowserRouter([
         path: "/Ecommerce",
         element: <Ecommerce />,
       },
+      {
+        path: "/ProductOverView",
+        element: <ProductOverview />
+      }
     ],
   },
 ]);

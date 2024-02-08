@@ -22,13 +22,14 @@ function Main() {
       document.getElementById('showMore').style.display="none";
     }
   }
+
   return (
     <>
     <div data-aos="fade-up" className="text-center">
       <h3 className="mt-4">Recommended For You</h3>
     </div>
       <div className="productCards">
-        {products.slice(0,more).map((itemDetails) => {
+        {products.slice(0,more).map((itemDetails,index) => {
           return (
             <>
              <ProdCard itemDetails={itemDetails}/>

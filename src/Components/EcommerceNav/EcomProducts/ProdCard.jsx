@@ -1,8 +1,13 @@
 import React, { useState } from "react";
 import "./Main.css";
 import { Star } from "../../index";
+import { useNavigate } from "react-router-dom";
 function ProdCard({ itemDetails }) {
-  
+  const navigate = useNavigate()
+  const redirectProductOverview = () =>{
+    navigate("/ProductOverView")
+
+  }
   return (
     <div data-aos="fade-up" className="productCard mt-5">
       <div className="">
@@ -14,7 +19,7 @@ function ProdCard({ itemDetails }) {
           <span className="price-tag">{" ₹ " + itemDetails.price}</span>
         </div>
       </div>
-      <button type="button" className="btn btn-store mt-2 btn-dark">
+    <button onClick={redirectProductOverview} type="button" className="btn btn-store mt-2 btn-dark">
         Add to Cart
       </button>
       {/* <button type="button" className="btn mt-3 btn-store  btn-dark">Buy Now</button> */}
