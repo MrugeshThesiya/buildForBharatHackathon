@@ -63,13 +63,13 @@ export default function Main() {
               <h3 className="content">Harshi Jain</h3>
             </div>
             <div className="card-2">
-              <h1>Front-end Web Developer</h1>
+              <h1>Product Manager</h1>
               <p>
-                Unleashing the magic of pixels, our Front-End Web Developer is a maestro of design and interactivity. 
-                Armed with a palette of HTML and CSS, she breathes life into our digital canvas, creating
-                 visually captivating websites that resonate with seamless user experiences. From responsive layouts to 
-                eye-catching animations, she also turns ideas into immersive web realities, ensuring every click 
-                 is a journey and every scroll a delight.
+                Meet our Product Manager, the visionary architect behind the scenes. With a keen eye for market 
+                trends and a passion for innovation, they navigate the product landscape, steering our team towards 
+                groundbreaking solutions. From ideation to execution, our Product Manager transforms ideas into reality,
+                 ensuring that every feature reflects not just functionality, but a commitment to pushing boundaries and
+                  setting new standards.
               </p>
             </div>
           </div>
