@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Main.css"
+import logo from "../../../../public/images/DigiCatLogo.jpg"
 export default function Main() {
   return (
     <>
@@ -13,7 +14,7 @@ export default function Main() {
           <div className="footer-logo">
             <a className="footer-logo-link" href="/">
               <span className="hidden-link-text">LOGO</span>
-              <img src="https://cdn-icons-png.flaticon.com/512/10528/10528357.png" />
+              <img style={{borderRadius:"4px"}} src={logo} />
             </a>
           </div>
           <div className="footer-menu">

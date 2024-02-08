@@ -104,8 +104,8 @@
   }
 
   .footer-call-to-action-button:hover {
-    background-color: #0C204A;
-    color: white;
+    background-color: white;
+    color: black;
   }
 
   .button:last-of-type {

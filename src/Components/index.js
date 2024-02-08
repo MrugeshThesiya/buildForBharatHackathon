@@ -9,8 +9,11 @@ import EcommerceNav2 from './EcommerceNav/EcomNav2/Main.jsx'
 import EcomCarousel from "./EcommerceNav/EcomCarousel/Main.jsx"
 import EcomProducts from "./EcommerceNav/EcomProducts/Main.jsx"
 import Star from "./Star.jsx";
+
 import Navbar from "./Navbar.jsx";
 import Signup from "./Signup.jsx"
+import ProductOverview from "./EcommerceNav/ProductPage/Main.jsx"
+
 export {
   Nav,
   Container,
@@ -25,4 +28,6 @@ export {
   Star,
   Navbar,
   Signup
+  ProductOverview
+
 };
