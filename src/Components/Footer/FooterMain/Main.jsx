@@ -21,10 +21,10 @@ export default function Main() {
             <h2 className="footer-menu-name"> Get Started</h2>
             <ul id="menu-get-started" className="footer-menu-list">
               <li className="menu-item menu-item-type-post_type menu-item-object-product">
-                <a href="/">Start</a>
+                <Link to="/">Start</Link>
               </li>
               <li className="menu-item menu-item-type-post_type menu-item-object-product">
-                <a href="/">Documentation</a>
+                <Link to="/">Documentation</Link>
               </li>
               <li className="menu-item menu-item-type-post_type menu-item-object-product">
                 <a href="/">Installation</a>
@@ -37,13 +37,13 @@ export default function Main() {
             <h2 className="footer-menu-name"> Company</h2>
             <ul id="menu-company" className="footer-menu-list">
               <li className="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="/">Contact</a>
+                <Link to="/">Contact</Link>
               </li>
               <li className="menu-item menu-item-type-taxonomy menu-item-object-category">
-                <a href="/">About Us</a>
+                <Link to="/">About Us</Link>
               </li>
               <li className="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="/">Careers</a>
+                <Link to="/">Careers</Link>
               </li>
             </ul>
           </div>
@@ -51,10 +51,10 @@ export default function Main() {
             <h2 className="footer-menu-name"> Legal</h2>
             <ul id="menu-legal" className="footer-menu-list">
               <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-170434">
-                <a href="/">Privacy Notice</a>
+                <Link to="/">Privacy Notice</Link>
               </li>
               <li className="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="/">Terms of Use</a>
+                <Link to="/">Terms of Use</Link>
               </li>
             </ul>
           </div>
