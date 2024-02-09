@@ -7,7 +7,7 @@ export default function Main() {
       <div data-aos="fade-down" className="outer-div1">
         <div className="inner-div1">
           <div  className="heading">
-            Empowering E-Commerce Success, Digitize Your Product Catalog with
+            Empowering  E-commerce Success, Digitize Your Product Catalog with
             Digicat
           </div>
           <div className="content">
@@ -22,7 +22,7 @@ export default function Main() {
         </div>
         <div className="inner-div2">
           <div className="main1">
-            <p>
+            <p className="para">
               Transform your printed catalogs into dynamic digital assets with
               Digicat. Our experts ensure seamless conversion, facilitating easy
               management for your store.
