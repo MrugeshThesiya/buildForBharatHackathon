@@ -59,12 +59,18 @@ export default function Main() {
               <h3 className="content">Harshi Jain</h3>
             </div>
             <div className="card-2">
+<<<<<<< Updated upstream
               <h1>Research and Content</h1>
               <p>
               Meet Harshi, our front-end developer exploring the realms of research and content. 
               Harshi combines coding skills with a curiosity for content creation, bringing simplicity
                and functionality to our website. With a focus on user-friendly design, Harshi ensures a
                 seamless and enjoyable online experience for our visitors.
+=======
+              <h1>Frontend Engineer</h1>
+              <p>
+              Meet Harshi, our front-end developer exploring the realms of research and content. Harshi combines coding skills with a curiosity for content creation, bringing simplicity and functionality to our website. With a focus on user-friendly design, Harshi ensures a seamless and enjoyable online experience for our visitors.
+>>>>>>> Stashed changes
               </p>
             </div>
           </div>
@@ -78,10 +84,14 @@ export default function Main() {
             <div className="card-2">
               <h1>Product Manager</h1>
               <p>
+<<<<<<< Updated upstream
               Say hello to Twinkal, our front-end web developer and product manager. Twinkal 
               handles the design and functionality of our website, making sure it looks good 
               and works well. It's all about creating a user-friendly experience, and Twinkal
                knows just how to balance the technical stuff with a practical touch.
+=======
+              Say hello to Twinkal, our front-end web developer and product manager. Twinkal handles the design and functionality of our website, making sure it looks good and works well. It's all about creating a user-friendly experience, and Twinkal knows just how to balance the technical stuff with a practical touch.
+>>>>>>> Stashed changes
               </p>
             </div>
           </div>
