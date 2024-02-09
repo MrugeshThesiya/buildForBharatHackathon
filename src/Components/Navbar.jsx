@@ -1,5 +1,4 @@
 import React from "react";
-import { Menu, X } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import codeKalakaarLogo from "/images/DigiCatLogo.jpg";
 import { useAuth0 } from "@auth0/auth0-react";

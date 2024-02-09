@@ -65,7 +65,7 @@ export default function Main() {
               Harshi combines coding skills with a curiosity for content creation, bringing simplicity
                and functionality to our website. With a focus on user-friendly design, Harshi ensures a
                 seamless and enjoyable online experience for our visitors.
-              </p>
+                </p>
             </div>
           </div>
           <div className="card">

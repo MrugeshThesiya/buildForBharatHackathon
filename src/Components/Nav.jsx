@@ -17,7 +17,7 @@ export default function Nav() {
   const { user, loginWithRedirect, isAuthenticated, logout } = useAuth0();
   return (
     <>
-      <nav>
+      <nav className="navbar">
         <div className="logo">
           <img
           className="mx-3"
