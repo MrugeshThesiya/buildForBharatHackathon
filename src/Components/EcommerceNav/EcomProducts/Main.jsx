@@ -14,30 +14,30 @@ function Main() {
       .get(ProductsAPI)
       .then((res) => {
         setProducts(res.data);
-        setTotalRows(Math.ceil(res.data.length / getItemsPerRow())); // Initial total rows calculation
+        setTotalRows(Math.ceil(res.data.length / getItemsPerRow()));
       })
       .catch((error) => {
-        console.error("Error : ", error);
+        console.error("Error: ", error);
       });
   }, [ProductsAPI]);
 
   useEffect(() => {
     updateVisibleRows();
-    window.addEventListener("resize", updateVisibleRows); // Update visible rows on window resize
+    window.addEventListener("resize", updateVisibleRows);
+
     return () => {
-      window.removeEventListener("resize", updateVisibleRows); // Clean up event listener
+      window.removeEventListener("resize", updateVisibleRows);
     };
-  }, [products]);
+  }, [products, visibleRows]);
 
   const getItemsPerRow = () => {
-    // Determine number of items per row based on screen width
     const screenWidth = window.innerWidth;
     if (screenWidth >= 992) {
-      return 4; // Large screens (≥992px): 4 items per row
+      return 4;
     } else if (screenWidth >= 768) {
-      return 3; // Medium screens (≥768px and <992px): 3 items per row
+      return 3;
     } else {
-      return 2; // Small screens (<768px): 2 items per row
+      return 2;
     }
   };
 
@@ -49,14 +49,16 @@ function Main() {
   };
 
   const showMore = () => {
-    if (visibleRows < totalRows) {
-      setVisibleRows(visibleRows + 1);
+    const newVisibleRows = visibleRows + 1;
+    if (newVisibleRows <= totalRows) {
+      setVisibleRows(newVisibleRows);
     }
   };
 
   const showLess = () => {
-    if (visibleRows > 1) {
-      setVisibleRows(visibleRows - 1);
+    const newVisibleRows = visibleRows - 1;
+    if (newVisibleRows >= 1) {
+      setVisibleRows(newVisibleRows);
     }
   };
 
@@ -70,11 +72,7 @@ function Main() {
           <ProdCard key={index} itemDetails={itemDetails} />
         ))}
       </div>
-      <div
-        data-aos="fade-up"
-        data-aos-duration="3000"
-        className="text-center"
-      >
+      <div data-aos="fade-up" data-aos-duration="3000" className="text-center">
         {visibleRows < totalRows && (
           <button onClick={showMore} className="btn">
             Show More
