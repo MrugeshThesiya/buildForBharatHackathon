@@ -10,7 +10,7 @@ export default function Main() {
               works closely with each client to understand their unique needs
               and goals, providing tailored solutions that deliver results.
             </p>
-            <h1 className="title2">OUR TEAM</h1>
+            <h1 className="title">OUR TEAM</h1>
 
         <div className="team-card">
           <div className="card">
@@ -19,9 +19,9 @@ export default function Main() {
               </div>
               <h3 className="content">Mrugesh Thesiya</h3>
             </div>
-            <div className="card-2">
-              <h1>Full Stack Web Developer</h1>
-              <p>
+            <div className="card-1">
+              <h1 className="title2">Team Lead</h1>
+              <p className="para2">
                 Meet our dynamic Full Stack Developer and Team Lead, a tech virtuoso
                  with a passion for innovation and a flair for leading teams to success.
                   With a robust background in both front-end and back-end technologies, 
@@ -39,9 +39,9 @@ export default function Main() {
               </div>
               <h3 className="content">Viral Vaghela</h3>
             </div>
-            <div className="card-2">
-              <h1>Front-end Web Developer</h1>
-              <p>
+            <div className="card-1">
+              <h1 className="title2">Front-end Developer</h1>
+              <p className="para2">
               Meet our Front-End Developer, a coding maestro who brings websites to life with 
               sleek designs and seamless interactions. While he specializes in crafting visually 
               appealing user interfaces using HTML, CSS, and JavaScript, he also dabbles in the backend, 
@@ -58,9 +58,9 @@ export default function Main() {
               </div>
               <h3 className="content">Harshi Jain</h3>
             </div>
-            <div className="card-2">
-              <h1>Research and Content</h1>
-              <p>
+            <div className="card-1">
+              <h1 className="title2">Research and Content</h1>
+              <p className="para2">
               Meet Harshi, our front-end developer exploring the realms of research and content. 
               Harshi combines coding skills with a curiosity for content creation, bringing simplicity
                and functionality to our website. With a focus on user-friendly design, Harshi ensures a
@@ -75,9 +75,9 @@ export default function Main() {
               </div>
               <h3 className="content">Twinkal Ajmera</h3>
             </div>
-            <div className="card-2">
-              <h1>Product Manager</h1>
-              <p>
+            <div className="card-1">
+              <h1 className="title2">Product Manager</h1>
+              <p className="para2">
               Say hello to Twinkal, our front-end web developer and product manager. Twinkal 
               handles the design and functionality of our website, making sure it looks good 
               and works well. It's all about creating a user-friendly experience, and Twinkal

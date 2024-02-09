@@ -1,28 +1,33 @@
 .title{
+    font-size: 45px;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 .title-des{
+    font-size: 20px;
     margin: 3rem;
+    margin-top: 2rem;
     text-align: center;
 }
 
 .title2{
-    font-size: 20px;
+    font-size: 40px;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     color: #00084d;
     text-align: center;
     margin-top: 25px;
 }
-.title p{
-    font-size: 1.5em;
-    line-height: 1.2em;
-    margin: 30px 0px;
-    color: #0b214a;
-    font-weight: 200 !important;
+
+.para2{
+    text-align: center;
+    padding: 1rem;
+    margin: 2rem;
+    margin-bottom: 0;
 }
 .team-card{
+    margin: 5rem;
+    margin-top: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,82 +45,56 @@
     border-radius: 15px;
 }
 
-/* .content{
-    white-space: nowrap;
-} */
 
 .card-1{
-    float: left;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 10px;
     color: #0b214a;
-}
-
-.card-2{
-    float: left;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.card-2 h1{
-    padding-left: 50px;
-    font-size: 25px;
-    color: #0b214a;
-}
-.card-2 p{
-    padding: 50px;
-    padding-top: 20px;
-    margin-right: 200px;
-    text-align: left;
-    font-size: 16px;
-    color: #0b214a;
-}
-.card-1 h3{
-    padding-top: 10px;
 }
 
 .img1{
-    border:5px solid #163172;
+    border:2px solid #163172;
     width: 10rem;
    height: 10rem;
    border-radius: 50%;
     background: url("https://media.licdn.com/dms/image/D4D03AQGm_x2aMcqUuw/profile-displayphoto-shrink_400_400/0/1704723680772?e=1712793600&v=beta&t=lJE-5mzy1oi5bSLODMOasj_Qi0gHEwZoNsM6EMm73JY") no-repeat center center/cover;
 }
 .img2{
-    border:5px solid #163172;
+    border:2px solid #163172;
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
      background: url("https://media.licdn.com/dms/image/D4D03AQHL4xNp46NuDw/profile-displayphoto-shrink_100_100/0/1704776948991?e=1712793600&v=beta&t=GpOcH3le6Gs_CBkBdem18iS5Q2s2lH7cdq0cVlt0-3A") no-repeat center center/cover;
 }
 .img3{
-    border:5px solid #163172;
+    border:2px solid #163172;
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
      background: url("https://images.unsplash.com/photo-1495716868937-273203d5bb0c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat center center/cover;
 }
 .img4{
-    border:5px solid #163172;
+    border:2px solid #163172;
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
      background: url("https://media.licdn.com/dms/image/D4D03AQHMLTpQyJ_CXA/profile-displayphoto-shrink_400_400/0/1707419037295?e=1712793600&v=beta&t=2owge4LBkoZD3xRnPYsYyGNEY6lt0sjWBJ6Uo0bwE4A") no-repeat center center/cover;
 }
 
-.team-section .container .team-card .card:hover{
+.card:hover{
     background-color: #f3f3f3;
     transition: 0.3s;
 }
-.team-section .container .team-card .card .image-section img{
+.image-section img{
     height: 150px;
     width: 150px;
     border-radius: 50%;
     border: 6px solid #fff;
 }
-.team-section .container .team-card .card .content h3{
+.content h3{
     font-size: 20px;
     margin-top: 10px;
     letter-spacing: 1.0px;
@@ -123,7 +102,7 @@
     padding-left: 50px;
     
 }
-.team-section .container .team-card .card .content p{
+.content p{
     font-size: 15px;
     line-height: 1.5;
     color: #6c6c6c;
@@ -135,6 +114,7 @@
     padding-left:50px ;
 }
 .Contact{
+    margin: 5rem;
     height: 500px;
     width: 100%;
     margin-top: 50px;
@@ -179,17 +159,19 @@
     background-color: #164bb5;
 }
 
-
-/* .card-1,.card-2,.card-3,.card-4{
-    float: right;
-} */
-@media screen and (max-width:900px){
-    .team-section .container .team-card{
-    grid-template-columns: repeat(2, 1fr);
+@media screen and (max-width:1024px){
+    .title{
+        font-size: 30px;
     }
-}
-@media screen and (max-width:768px){
-    .team-section .container .team-card{
-    grid-template-columns: 1fr;
+    .card{
+        flex-direction: column;
+    }
+    .title2{
+        font-size: 20px;
+        margin: 0;
+    }
+    .para2{
+        margin: 0;
+        padding: 0;
     }
 }

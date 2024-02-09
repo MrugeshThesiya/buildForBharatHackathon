@@ -27,7 +27,7 @@ function Main() {
     return () => {
       window.removeEventListener("resize", updateVisibleRows); // Clean up event listener
     };
-  }, [products]);
+  }, [products,visibleRows]);
 
   const getItemsPerRow = () => {
     // Determine number of items per row based on screen width
