@@ -29,6 +29,7 @@ function Main() {
       <h3 className="mt-4">Recommended For You</h3>
     </div>
       <div className="productCards">
+
         {products.slice(0,more).map((itemDetails,index) => {
           return (
             <>
@@ -36,6 +37,7 @@ function Main() {
             </>
           );
         })}
+
       </div>
       <div data-aos="fade-up" data-aos-duration="3000" className="text-center">
         <button id="showMore" onClick={showMore} className="btn"> Show More</button>

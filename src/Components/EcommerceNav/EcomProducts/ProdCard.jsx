@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Main.css";
+
 import { Star } from "../../index";
 import { useNavigate } from "react-router-dom";
 function ProdCard({ itemDetails }) {
@@ -33,6 +34,7 @@ function ProdCard({ itemDetails }) {
       </div>
     </div>
   );
+
 }
 
 export default ProdCard;

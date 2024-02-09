@@ -56,7 +56,7 @@ export default function Nav() {
             {/* <img id='search-mobile' className='search-icon pointer' src="https://cdn-icons-png.flaticon.com/512/4410/4410940.png" alt="Search" /> */}
           </span>
           <div className="button-items d-flex">
-            <span className="sign-div d-flex">
+            {/* <span className="sign-div d-flex">
               {
                 isAuthenticated ? (
                   <button
@@ -84,7 +84,7 @@ export default function Nav() {
               >
                 Get Started
               </button>
-            </span>
+            </span> */}
           </div>
         </div>
       </nav>
