@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Main.css"
 import logo from "/images/DigiCatLogo.jpg"
+import { Link } from 'react-router-dom'
 export default function Main() {
   return (
     <>
@@ -12,22 +13,21 @@ export default function Main() {
       <div className="footer-content">
         <div className="footer-content-column">
           <div className="footer-logo">
-            <a className="footer-logo-link" href="/">
-              <span className="hidden-link-text">LOGO</span>
+            <Link className="footer-logo-link" to="/About">
               <img style={{borderRadius:"4px"}} src={logo} />
-            </a>
+            </Link>
           </div>
           <div className="footer-menu">
             <h2 className="footer-menu-name"> Get Started</h2>
             <ul id="menu-get-started" className="footer-menu-list">
               <li className="menu-item menu-item-type-post_type menu-item-object-product">
-                <a href="#">Start</a>
+                <a href="/">Start</a>
               </li>
               <li className="menu-item menu-item-type-post_type menu-item-object-product">
-                <a href="#">Documentation</a>
+                <a href="/">Documentation</a>
               </li>
               <li className="menu-item menu-item-type-post_type menu-item-object-product">
-                <a href="#">Installation</a>
+                <a href="/">Installation</a>
               </li>
             </ul>
           </div>
@@ -37,13 +37,13 @@ export default function Main() {
             <h2 className="footer-menu-name"> Company</h2>
             <ul id="menu-company" className="footer-menu-list">
               <li className="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="#">Contact</a>
+                <a href="/">Contact</a>
               </li>
               <li className="menu-item menu-item-type-taxonomy menu-item-object-category">
-                <a href="#">About Us</a>
+                <a href="/">About Us</a>
               </li>
               <li className="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="#">Careers</a>
+                <a href="/">Careers</a>
               </li>
             </ul>
           </div>
@@ -51,10 +51,10 @@ export default function Main() {
             <h2 className="footer-menu-name"> Legal</h2>
             <ul id="menu-legal" className="footer-menu-list">
               <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-170434">
-                <a href="#">Privacy Notice</a>
+                <a href="/">Privacy Notice</a>
               </li>
               <li className="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="#">Terms of Use</a>
+                <a href="/">Terms of Use</a>
               </li>
             </ul>
           </div>
@@ -64,21 +64,21 @@ export default function Main() {
             <h2 className="footer-menu-name"> Quick Links</h2>
             <ul id="menu-quick-links" className="footer-menu-list">
               <li className="menu-item menu-item-type-custom menu-item-object-custom">
-                <a target="_blank" rel="noopener noreferrer" href="#">Support Center</a>
+                <a target="_blank" rel="noopener noreferrer" href="/">Support Center</a>
               </li>
               <li className="menu-item menu-item-type-custom menu-item-object-custom">
-                <a target="_blank" rel="noopener noreferrer" href="#">Service Status</a>
+                <a target="_blank" rel="noopener noreferrer" href="/">Service Status</a>
               </li>
               <li className="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="#">Security</a>
+                <a href="/">Security</a>
               </li>
               <li className="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="#">Blog</a>
+                <a href="/">Blog</a>
               </li>
               <li className="menu-item menu-item-type-post_type_archive menu-item-object-customer">
-                <a href="#">Customers</a></li>
+                <a href="/">Customers</a></li>
               <li className="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="#">Reviews</a>
+                <a href="/">Reviews</a>
               </li>
             </ul>
           </div>
@@ -87,7 +87,7 @@ export default function Main() {
           <div className="footer-call-to-action">
             <h2 className="footer-call-to-action-title">{"Let's Chat"}</h2>
             <p className="footer-call-to-action-description"> Have a support question?</p>
-            <a className="footer-call-to-action-button button" href="#" target="_self"> Get in Touch </a>
+            <a className="footer-call-to-action-button button" href="/" target="_self"> Get in Touch </a>
           </div>
           <div className="footer-call-to-action">
             <h2 className="footer-call-to-action-title"> You Call Us</h2>
@@ -98,7 +98,7 @@ export default function Main() {
       <div className="footer-copyright">
         <div className="footer-copyright-wrapper">
           <p className="footer-copyright-text">
-            <a className="footer-copyright-link" href="#" target="_self"> ©2024 | Design By DigiCat | All rights reserved. </a>
+            <a className="footer-copyright-link" href="/" target="_self"> ©2024 | Design By DigiCat | All rights reserved. </a>
           </p>
         </div>
       </div>
