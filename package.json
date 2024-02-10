@@ -11,10 +11,15 @@
   },
   "dependencies": {
     "@auth0/auth0-react": "^2.2.4",
+    "@tensorflow-models/mobilenet": "^2.1.1",
+    "@tensorflow/tfjs": "^4.17.0",
+    "@tensorflow/tfjs-converter": "^4.17.0",
+    "@tensorflow/tfjs-core": "^4.17.0",
     "aos": "^2.3.4",
     "appwrite": "^13.0.1",
     "axios": "^1.6.7",
     "lucide-react": "^0.323.0",
+    "node-sass": "^9.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
@@ -32,6 +37,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "postcss": "^8.4.35",
+    "sass": "^1.70.0",
     "tailwindcss": "^3.4.1",
     "vite": "^5.0.8"
   }

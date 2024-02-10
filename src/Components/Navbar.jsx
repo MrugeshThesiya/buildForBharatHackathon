@@ -197,7 +197,6 @@ function Navbar() {
           )}
         </div>
       </div>
-      <hr />
     </>
   );
 }
