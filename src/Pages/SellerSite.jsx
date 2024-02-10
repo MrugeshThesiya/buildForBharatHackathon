@@ -1,11 +1,10 @@
 import React from 'react'
-
+import { Digi } from '../Components/index'
 
 function SellerSite() {
   return (
     <>
-
-      <h1 style={{textAlign:"center"}}>Seller Site</h1>
+      <Digi/>
     </>
   )
 }

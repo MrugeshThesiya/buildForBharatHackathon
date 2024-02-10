@@ -1,5 +1,6 @@
 import React from "react";
 import "../HomeMain/HomeMain.css";
+import { Link } from "react-router-dom";
 
 export default function Main() {
   return (
@@ -11,14 +12,13 @@ export default function Main() {
             Digicat
           </div>
           <div className="content">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-            possimus odio nostrum.
+            Digicat will always be there for you.
           </div>
           <br />
           <br />{" "}
-          <a id="gtStart" className="gt-start-link" href="#">
+          <Link id="gtStart" className="gt-start-link" to="/SellerSite">
             Get started
-          </a>
+          </Link>
         </div>
         <div className="inner-div2">
           <div className="main1">

@@ -5,20 +5,20 @@ import { Navigate, useNavigate } from "react-router-dom";
 export default function Container() {
   const navigate = useNavigate();
   const navigateToAbout = () => {
-    navigate("/About");
+    navigate("/SellerSite");
   };
   return (
-    <>
+    <div >
       <div>
         <div data-aos="fade-down" className="text-center mt-0">
           <p className="tagline-text">
-            Develop Swiftly. <br />
-            <span className="tagline2">Deploy Globally.</span>
+            Digitize Swiftly. <br />
+            <span className="tagline2">Sell Globally.</span>
           </p>
           <div data-aos="" className="text-dark tagline">
-            Your Online Business{" "}
+           Ease Your Online {" "}
             <a className="pointer" href="/About">
-              Journey With Ease
+            Business Journey With Us
             </a>
           </div>
         </div>
@@ -36,26 +36,24 @@ export default function Container() {
               <path d="M10,21.236,6.755,14.745.264,11.5,6.755,8.255,10,1.764l3.245,6.491L19.736,11.5l-6.491,3.245ZM18,21l1.5,3L21,21l3-1.5L21,18l-1.5-3L18,18l-3,1.5ZM19.333,4.667,20.5,7l1.167-2.333L24,3.5,21.667,2.333,20.5,0,19.333,2.333,17,3.5Z"></path>
             </svg>
 
-            <span className="text">Discover DigiCat Cloud</span>
+            <span className="text">Discover DigiCat</span>
           </button>
         </div>{" "}
         <br />
         <br />
         <br /> <br />
         <div data-aos="" className="text-center">
-          <div className="what-text">What is DigiCat Cloud?</div>
+          <div className="what-text">What is DigiCat?</div>
           <div className="caption text-center">
-            Fast-track app creation, effortless sharing.
+            Fast-track catalog digitization.
           </div>
           <div className="caption-ans text-center">
-            DigiCat Cloud revolutionizes app development, sharing, and
-            deployment. Say goodbye to environment headaches and embrace
-            seamless creation and collaboration.
+            DigiCat revolutionizes catalog digitization through a multi-faceted approach, seamlessly blending text, voice, and image input for an enhanced user experience. Leveraging cutting-edge technologies, our solution streamlines the process of digitizing product catalogs.
           </div>
         </div>
       </div>
     <HomeComponent1 />
     <HomeComponent2 />
-    </>
+    </div>
   );
 }
