@@ -64,21 +64,21 @@ export default function Main() {
             <h2 className="footer-menu-name"> Quick Links</h2>
             <ul id="menu-quick-links" className="footer-menu-list">
               <li className="menu-item menu-item-type-custom menu-item-object-custom">
-                <a target="_blank" rel="noopener noreferrer" href="/">Support Center</a>
+                <Link target="_blank" rel="noopener noreferrer" to="/">Support Center</Link>
               </li>
               <li className="menu-item menu-item-type-custom menu-item-object-custom">
-                <a target="_blank" rel="noopener noreferrer" href="/">Service Status</a>
+                <Link target="_blank" rel="noopener noreferrer" to="/">Service Status</Link>
               </li>
               <li className="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="/">Security</a>
+                <Link to="/">Security</Link>
               </li>
               <li className="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="/">Blog</a>
+                <Link to="/">Blog</Link>
               </li>
               <li className="menu-item menu-item-type-post_type_archive menu-item-object-customer">
-                <a href="/">Customers</a></li>
+                <Link to="/">Customers</Link></li>
               <li className="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="/">Reviews</a>
+                <Link to="/">Reviews</Link>
               </li>
             </ul>
           </div>
@@ -87,7 +87,7 @@ export default function Main() {
           <div className="footer-call-to-action">
             <h2 className="footer-call-to-action-title">{"Let's Chat"}</h2>
             <p className="footer-call-to-action-description"> Have a support question?</p>
-            <a className="footer-call-to-action-button button" href="/" target="_self"> Get in Touch </a>
+            <Link className="footer-call-to-action-button button" to="/" target="_self"> Get in Touch </Link>
           </div>
           <div className="footer-call-to-action">
             <h2 className="footer-call-to-action-title"> You Call Us</h2>
@@ -98,7 +98,7 @@ export default function Main() {
       <div className="footer-copyright">
         <div className="footer-copyright-wrapper">
           <p className="footer-copyright-text">
-            <a className="footer-copyright-link" href="/" target="_self"> ©2024 | Design By DigiCat | All rights reserved. </a>
+            <Link className="footer-copyright-link" to="/" target="_self"> ©2024 | Design By DigiCat | All rights reserved. </Link>
           </p>
         </div>
       </div>

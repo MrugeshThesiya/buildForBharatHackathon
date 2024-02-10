@@ -1,19 +1,23 @@
 .container{
     display: flex;
+    justify-content: center;
     align-items: center;
     width: 100%;
     margin-top: 94px;
     position: relative;
-    left: -50px;
+
 }
 
-.container .content .row{
+/* .row{
     width: 80%;
-    /* margin: auto; */
-}
+    margin: auto;
+} */
 
 .content{
-    margin-right: 10px;
+    /* margin-right: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .title h4{
@@ -29,14 +33,26 @@ p{
     font-size: 16px;
     font-family: 'Roboto' sans-serif;
 }
-.image-container{
-    width: 100;
-    margin-left: 10px;
-}
+
 .img{
-    margin-left: 300px;
+    margin-left: 200px;
     border-radius: 10px;
     height: 350px;
     width: 500px;
     background: url("https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=3538&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat center center/cover;
+}
+
+@media(min-width:380px)and (max-width:1024px){
+    .content{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+    .img{
+        margin: 0px;
+    }
 }

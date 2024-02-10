@@ -16,13 +16,10 @@ function Main2() {
                     <p style={{paddingBottom: "40px"}}>Simplify stock management for e-commerce businesses with DigiCat. </p>
                 </div>
             </div>
-        </div>
-        <div className="image-container">
-            <div className="image">
                 <div className="img">
                 </div>
-            </div>
         </div>
+        
     </div>
     </>
   )

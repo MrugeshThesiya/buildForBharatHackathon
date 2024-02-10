@@ -106,13 +106,13 @@
     font-size: 15px;
     line-height: 1.5;
     color: #6c6c6c;
-    text-align:right;}
-
-.para{
-    text-align: center;
-    width: 900px;
-    padding-left:50px ;
 }
+
+/* .para{
+    text-align: center;
+    width: 400px;
+    padding-left:50px ;
+} */
 .Contact{
     margin: 5rem;
     height: 500px;
